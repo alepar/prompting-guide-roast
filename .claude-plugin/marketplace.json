@@ -1,0 +1,14 @@
+{
+  "name": "prompting-guide-roast",
+  "description": "Prompting-guide roast for agent skills and prompt files",
+  "owner": { "name": "alepar" },
+  "plugins": [
+    {
+      "name": "prompting-guide-roast",
+      "description": "Roast agent skills and prompt files against current Claude and OpenAI (GPT-6) prompting guidance",
+      "version": "0.1.0",
+      "source": "./",
+      "author": { "name": "alepar" }
+    }
+  ]
+}

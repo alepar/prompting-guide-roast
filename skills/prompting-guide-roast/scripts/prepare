@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# prepare — build the roast's args from a target and write a runnable engine script (run.js).
+# Usage: bash prepare --help. Exit codes: 0 ok, 2 bad input, 3 skill-file drift, 4 node unavailable.
+set -euo pipefail
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+command -v node >/dev/null 2>&1 || {
+  echo "NODE_UNAVAILABLE: node 22 or later is required to assemble the roast. Install node, or run the roast by hand: read engine/roast.js's args contract (units, lanes, prompts, models, refs, config) and build the JSON yourself."
+  exit 4
+}
+exec node "$here/prepare.mjs" "$@"

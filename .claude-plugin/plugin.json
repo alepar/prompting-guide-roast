@@ -1,0 +1,19 @@
+{
+  "name": "prompting-guide-roast",
+  "description": "Roast agent skills and prompt files against current Claude and OpenAI (GPT-6) prompting guidance; a Workflow-based audit that reports ranked, guide-cited edits",
+  "version": "0.1.0",
+  "author": {
+    "name": "alepar"
+  },
+  "homepage": "https://github.com/alepar/prompting-guide-roast",
+  "repository": "https://github.com/alepar/prompting-guide-roast",
+  "keywords": [
+    "skills",
+    "prompting",
+    "audit",
+    "workflow",
+    "claude",
+    "openai"
+  ],
+  "license": "MIT"
+}
